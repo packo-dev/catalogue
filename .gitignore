@@ -26,3 +26,5 @@ dist-ssr
 # Variables d'environnement (clé API)
 .env
 .env.local
+
+.vercel
