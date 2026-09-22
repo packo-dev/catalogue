@@ -1,0 +1,242 @@
+/* Layout principal */
+.app-layout {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* En-tete */
+.en-tete {
+  text-align: center;
+  padding: 30px 0 10px;
+}
+.en-tete h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+.en-tete p {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* Navigation */
+.nav-principale {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 12px 0;
+  border-bottom: 1px solid #222;
+  margin-bottom: 24px;
+}
+.nav-principale a {
+  color: #aaa;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.nav-principale a:hover {
+  color: #6ec1e4;
+  text-decoration: none;
+}
+
+/* Grille */
+.grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+/* Carte */
+.carte-jeu {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s, border-color 0.2s;
+}
+.carte-jeu:hover {
+  transform: translateY(-4px);
+  border-color: #6ec1e4;
+}
+.carte-jeu img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.carte-jeu h2 {
+  font-size: 1.1rem;
+  padding: 12px 14px 4px;
+  color: #fff;
+}
+.carte-jeu p {
+  font-size: 0.85rem;
+  color: #999;
+  padding: 0 14px 4px;
+}
+.carte-jeu .carte-actions {
+  display: flex;
+  gap: 8px;
+  padding: 8px 14px 14px;
+}
+
+/* Boutons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background 0.2s, opacity 0.2s;
+}
+.btn-primaire {
+  background: #6ec1e4;
+  color: #0f0f0f;
+}
+.btn-primaire:hover {
+  background: #8ed0ec;
+}
+.btn-secondaire {
+  background: #2a2a2a;
+  color: #ccc;
+}
+.btn-secondaire:hover {
+  background: #333;
+}
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Panneau / section */
+.panneau {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+.panneau h3 {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+/* Champ de recherche */
+.champ-recherche {
+  width: 100%;
+  padding: 10px 14px;
+  background: #0f0f0f;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: #e8e8e8;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+}
+.champ-recherche:focus {
+  outline: none;
+  border-color: #6ec1e4;
+}
+
+/* Formulaire */
+.formulaire .champ-groupe {
+  margin-bottom: 16px;
+}
+.formulaire label {
+  display: block;
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-bottom: 6px;
+}
+.formulaire input {
+  width: 100%;
+  padding: 10px 14px;
+  background: #0f0f0f;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: #e8e8e8;
+  transition: border-color 0.2s;
+}
+.formulaire input:focus {
+  outline: none;
+  border-color: #6ec1e4;
+}
+.erreur-champ {
+  color: #e74c3c;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+/* Detail jeu */
+.detail-jeu {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.detail-jeu img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.detail-jeu h2 {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.detail-jeu .info {
+  color: #999;
+  margin-bottom: 6px;
+}
+.detail-jeu .description {
+  margin-top: 16px;
+  line-height: 1.7;
+  color: #ccc;
+}
+.detail-jeu .detail-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Favoris */
+.liste-favoris {
+  list-style: none;
+}
+.liste-favoris li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #222;
+}
+
+/* Etats chargement / erreur */
+.etat-chargement,
+.etat-erreur,
+.etat-vide {
+  text-align: center;
+  padding: 40px 20px;
+  color: #888;
+}
+.etat-erreur {
+  color: #e74c3c;
+}
+
+/* Confirmation formulaire */
+.confirmation {
+  color: #2ecc71;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+/* Page 404 */
+.page-404 {
+  text-align: center;
+  padding: 60px 20px;
+}
+.page-404 h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 12px;
+}
