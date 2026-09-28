@@ -269,17 +269,17 @@ Le fichier `vercel.json` redirige toutes les routes vers `index.html` pour que l
 
 | Domaine | Membre(s) |
 |---|---|
-| Configuration (Vite, TypeScript, tsconfig) | À compléter |
-| Types et interfaces | À compléter |
-| Composants (EnTete, CarteJeu, Grille, Panneau) | À compléter |
-| Routage (React Router, Layout, 404) | À compléter |
-| Hooks personnalisés (useFetch, useDebounce, useFavoris) | À compléter |
-| État global (FavorisContext, useReducer) | À compléter |
-| API et asynchrone (RAWG, AbortController) | À compléter |
-| Formulaire (ProposerJeu, validation) | À compléter |
-| Tests (Vitest, Testing Library) | À compléter |
-| CSS et design | À compléter |
-| Déploiement (Vercel) | À compléter |
+| Configuration (Vite, TypeScript, tsconfig) | Vladimir, Olivier |
+| Types et interfaces | Vladimir |
+| Composants (EnTete, CarteJeu, Grille, Panneau) | Olivier, Vladimir |
+| Routage (React Router, Layout, 404) | Vladimir |
+| Hooks personnalisés (useFetch, useDebounce, useFavoris) | Olivier |
+| État global (FavorisContext, useReducer) | Vladimir, Olivier |
+| API et asynchrone (RAWG, AbortController) | Olivier |
+| Formulaire (ProposerJeu, validation) | Vladimir |
+| Tests (Vitest, Testing Library) | Olivier, Vladimir |
+| CSS et design | Olivier |
+| Déploiement (Vercel) | Vladimir, Olivier |
 
 ---
 
